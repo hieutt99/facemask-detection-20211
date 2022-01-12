@@ -1,0 +1,41 @@
+# logging_file: /content/gdrive/MyDrive/zalo-ai/logging/efnet/logging.txt
+logging_file: test_folder/logging.txt
+
+do_train: True
+do_predict: False
+
+train_folder: _temp_data/crop_face_mask
+# train_meta: data/train/train_meta.csv
+# test_folder: data/public_test/images/
+# test_meta: data/public_test/public_test_meta.csv
+batch_size: 10
+
+# labels: [mask]
+
+# transform policy 
+train_policy: train
+test_policy: test
+
+model_name: yolo
+model_args:
+    in_channels: 3
+
+train_args:
+    # checkpoint: 100
+    lr: 1e-4
+    strategy: epoch # step or epoch
+    n_steps: 100
+    n_epochs: 10
+    lr_steps: 500
+    steps_per_epoch: null # for augmentation in strategy epoch
+    logging_dir: logging 
+    # logging_dir: /content/gdrive/MyDrive/zalo-ai/logging/efnet/
+    device: cpu
+    eval_interval: null
+    # save_folder: /content/gdrive/MyDrive/zalo-ai/saved_models/efnet/
+    save_folder: test_folder
+    save_strategy: epoch # step or epoch 
+    save_interval: 1
+    # start_epoch: 2
+
+

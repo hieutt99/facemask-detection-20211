@@ -1,0 +1,12 @@
+input/*
+output/*
+**/__pycache__/
+.ipynb_checkpoints/
+
+facemask-dataset.zip
+weights/*
+
+env/
+
+*.mp4
+*.jpg

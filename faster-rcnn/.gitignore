@@ -1,0 +1,22 @@
+# data/public_test/*.csv
+# data/public_test/*.zip
+# data/public_test/images/
+
+# data/train/*.csv
+# data/train/*.zip
+# data/train/images/
+
+data_/
+
+papers/
+
+*.zip
+*.pt
+*.pdf
+
+_temp_data/
+_check/
+facemask_yolov5/
+temp/
+
+*.pth
